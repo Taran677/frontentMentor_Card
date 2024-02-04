@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <img src="images\bg-main-desktop.png" alt="bg ">
+  </div>
+  <div class="card">
+    <img class="imgCard" src="images\bg-card-front.png" alt="err">
+    <div class="container">
+      <div class="circles"><img src="images\card-logo.svg" alt="o"></div>
+      <div class="digits">
+        <div class="dig1" id="done">0000</div>
+
+        <div class="dig1" id="dtwo">0000</div>
+
+        <div class="dig1" id="dthree">0000</div>
+
+        <div class="dig1" id="dfour">0000</div>
+      </div>
+      <div class="name">
+        <div class="name1 namespace">JANE APPLESEED</div>
+        <div class="name1 cvc">00/00</div>
+      </div>
+    </div>
+  </div>
+  <div class="dummy">
+    <img class="circle" src="images\bg-card-back.png" alt="err">
+  </div>
+  <div class="cardDetails">
+    <div class="container2">
+      <div class="form1">
+
+        <div class="name nameForm" id="name2" >CARDHOLDER NAME</div>
+        <div class="form no-highlight" data-state="passive" onclick="clickHandle(0)" data-index="0">e.g. Jane Appleseed</div>
+
+        <div class="name" id="name2">CARD NUMBER</div>
+        <div class="form no-highlight" data-state="passive" onclick="clickHandle(1)"  data-index="1">e.g. 1234 5548 9978 0000</div>
+      </div>
+
+      <div class="form2">
+
+        <div class="block1 ultra">
+          <div class="name" id="name2">EXP. DATE(MM/YY)</div>
+          <div class="formContainer">
+
+            <div class="form no-highlight spl" data-state="passive" onclick="clickHandle(2)"  data-index="2">MM</div>
+            <div class="form no-highlight spl" data-state="passive" onclick="clickHandle(3)"  data-index="3">YY</div>
+
+          </div>
+        </div>
+
+        <div class="block1 special">
+          <div class="name" id="name2">CVC</div>
+          <div class="form no-highlight" data-state="passive" onclick="clickHandle(4)"  data-index="4">e.g. 123</div>
+        </div>
+      </div>
+      <div class="confirm">
+        Confirm
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+</body>
+
+</html>
