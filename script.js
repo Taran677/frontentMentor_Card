@@ -13,7 +13,7 @@ let resize = () => {
     container.style.maxWidth = setWidth.toString() + "vh"
     dig1 = Array.from(dig1)
     dig1.forEach(element => {
-        if (ratio > 1.6 && ratio > 1) {
+        if (ratio > 1.7 && ratio > 1) {
             element.style.fontSize = "1.5vw"
         }
         else {
